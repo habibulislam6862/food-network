@@ -1,8 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+header{
+    margin: 30px 0 30px 0;
+}
+header ul{
+    list-style: none;
+    padding: 0;
+}
+header .container>div>div, header .container>div {
+    display: flex;
+    align-items: center;
+}
+header .container>div{
+    justify-content:space-between;
+}
+header ul li a{
+    color: #0B0D17;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s
+}
+header ul li a:hover{
+    color: crimson
+}
+header ul li{
+    float: left;
+    margin-right: 60px 
+}
+header input[type=text]{
+    padding: 8px 20px;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 1px solid #0B0D17;
+    outline: none;
+}
+header input[type=text]:focus{
+    border:1px solid crimson;
 }
 h1{
     font-style: normal;
@@ -19,12 +60,33 @@ h1{
     width: 50%;
     float: left
 }
+#section-one .left-col{
+    margin-top: 227px;
+}
+#section-one .right-col{
+    margin-top: 20px;
+}
+#section-two .left-col{
+    margin-top: 32px;
+}
+#section-two .right-col{
+    margin-top: 100px;
+    padding: 0 48px;
+}
+#section-three .section-header>h2, #section-three .section-header>p{
+    text-align: center;
+    color: #252525
+}
+#section-three .section-header>h2{
+    font-size: 36px;
+    margin-top: 100px
+}
 
 .container{
     width:1440px;
     margin: auto;
 }
-#highlight{
+.highlight{
     color:crimson;
 }
 .button{
@@ -37,4 +99,72 @@ h1{
     padding: 24px 32px;
     box-shadow: 0px 2px 30px rgb(240, 38, 38);
     margin-top: 50px
+}
+.button:hover{
+    background: linear-gradient(rgb(218, 36, 36), rgb(187, 15, 58));
+    cursor: pointer;
+}
+#section-two{
+    background: url(./img/frame.jpg) 0 0 / 107% 117%;
+    width: 100%;
+    overflow: hidden;
+}
+#section-two .container{
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+#section-two h2 {
+    color: #707070
+}
+#section-two p{
+    line-height: 32px;
+    margin: 32px 0;
+    font-size: 18px;
+}
+
+.row{
+    width: fit-content;
+    margin: auto;
+}
+#section-three .section-header{
+    margin-bottom:38px
+}
+#section-three{
+    overflow: hidden;
+    padding-bottom: 130px;
+}
+.col{
+    width: 377px;
+    float: left;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    margin-left: 54px
+}
+.col:first-child{
+    margin-left: 0;
+}
+.col img{
+    max-width: 100%;
+    width: 337px;
+    height: 256px;
+}
+.col .content{
+    margin: 40px 0;
+    color: #18191F;
+}
+.col .content p{
+    line-height: 32px;;
+}
+footer{
+    background-color: #0B0D17;
+    padding: 37px 0;
+    text-align: center;
+}
+footer h3{
+    font-size: 30px;
+    overflow: hidden;
+}
+footer h3, footer p{
+    color: white;
 }
